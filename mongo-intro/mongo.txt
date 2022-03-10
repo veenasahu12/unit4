@@ -1,0 +1,27 @@
+ To create collections
+ > db.createCollection("users")
+
+ To inserts into db
+ > db.users.insert([{"first_name":"Alisha","last_name":"sahu","age":25,"email":"abc@gmail.com","gender":"female"}])  
+
+To insertMany into db
+> db.users.insertMany([{"name":"vishal","age":24,"gender":"female"},{"name":"veena","age":24,"gender":"female"},{"name":"teju","age":25,"gender":"female"},{"name":"karan","age":22,"gender":"male"},{"name":"simran","age":22,"gender":"female"},{"name":"sorav"},{"name":"ishani","age":23,"gender":"female"},{"name":"kavita","age":26,"gender":"female"},{"name":"kanchan","age":21,"gender":"female"},{"name":"nilam","age":24,"gender":"female"},{"name":"kunal","age":22,"gender":"male"}])  
+
+To findOne into db
+> db.users.findOne({})
+
+To updateone into db
+> db.users.update({"name":"vishal"},{$set:{"age":22}})
+
+To updateMany into db
+> db.users.update({"age":22},{$set:{"eligible":true}})
+
+To delete the many database
+> db.users.remove({"eligible":true})
+
+To remove all the documents from the collections
+db.users.remove()
+
+
+
+
